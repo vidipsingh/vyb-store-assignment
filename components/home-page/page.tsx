@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Faq from './Faq'
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <Navbar />
@@ -13,4 +13,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
