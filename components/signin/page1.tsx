@@ -53,7 +53,7 @@ const Page2 = () => {
             <div className="md:ml-14 lg:ml-28 lg:mr-20 mt-4 items-center text-center "> 
             <button className='border border-green-900 pl-10 pr-10 py-1 rounded-full'>Login</button>
             <div className="">
-                <h1 className="flex items-center justify-center  "><FiMinus className="text-4xl"/>Don't have an account?<FiMinus className="text-4xl"/></h1>
+                <h1 className="flex items-center justify-center  "><FiMinus className="text-4xl"/>Don&apos;t have an account?<FiMinus className="text-4xl"/></h1>
                 <button className='bg-green-900 text-white px-8 py-1 rounded-full'>Sign Up</button>
             </div>
             </div>

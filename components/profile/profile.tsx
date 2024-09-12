@@ -66,14 +66,14 @@ const Profile = () => {
                 <h1 className='text-lg font-bold'>Link Social Media Accunt</h1>
                 <div className='flex gap-3 my-2 items-center border border-green-900 p-1 px-2 w-80 rounded-lg '>
                     <img src="images/pngwing.com (15).png" className='w-4 h-4' alt="" />
-                    <div className='border border-green-900 px-2 rounded-lg'>Followers Count</div>
-                    <div className='border border-green-900 px-2 rounded-lg'>Instagram I'D</div>
+                    <div className=" border border-green-900 px-2 rounded-lg ">Followers Count</div>
+                    <div className=" border border-green-900 px-2 rounded-lg ">Instagram I'D</div>
                 </div>
 
                 <div className='flex gap-3 my-2 items-center border border-green-900 p-1 px-2 w-80 rounded-lg '>
                     <img src="images/pngwing.com (16).png" className='w-4 h-4' alt="" />
-                    <div className='border border-green-900 px-2 rounded-lg'>Followers Count</div>
-                    <div className='border border-green-900 px-2 rounded-lg'>Yotube I'D</div>
+                    <div className=" border border-green-900 px-2 rounded-lg ">Followers Count</div>
+                    <div className=" border border-green-900 px-2 rounded-lg ">Yotube I'D</div>
                 </div>
             </div>
 

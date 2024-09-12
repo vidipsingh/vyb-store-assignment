@@ -82,7 +82,7 @@ const Hero = () => {
         <div className='md:flex sm:flex-none flex-none justify-center gap-8 mt-10'>
             <div className=' bg-green-950 text-white w-96 p-4 h-52 rounded-md mt-28 sm:ml-24 ml-24 md:ml-0 '>
                 <h1 className='font-bold text-xl'>Start Vybing with us!</h1>
-                <p className='mt-2'>"We help influencers make money by monetizing their travel plans, merchandise, and digital goods and many more."</p>
+                <p className='mt-2'> We help influencers make money by monetizing their travel plans, merchandise, and digital goods and many more. </p>
 
                 <button className='mt-4 bg-green-600 rounded-md p-2 px-3 text-black'>Join Us</button>
             </div>
@@ -114,7 +114,7 @@ const Hero = () => {
             </div>
 
             <div className='md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 sm:ml-40 bg-emerald-50 rounded-md p-4'>
-                <h1 className='font-bold text-xl'>"Monetize your influencer status: Earn money adding real value to your true followers!" </h1>
+                <h1 className='font-bold text-xl'> Monetize your influencer status: Earn money adding real value to your true followers! </h1>
                 <p className='mt-2'>Let VYB the money now !! Its here and widthdraw it periodically.</p>
 
                 <img src="images/earning mobile 1.png" alt="" className='mt-6 md:w-56 sm:w-28 sm:h-56 md:h-[450px]  text-center sm:ml-16 md:ml-32' />

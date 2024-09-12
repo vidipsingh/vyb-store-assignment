@@ -43,33 +43,29 @@ const Faq = () => {
 
   return (
     <div>
-        <div className='w-screen h-[550px] text-center'>
-            <h1 className='mt-20 text-2xl font-semibold'>FREQUENTLY ASKED QUESTIONS</h1>
-            <p>Quick answers to questions you may have. Can’t find what you're looking for? </p>
+        <div className="w-screen h-[550px] text-center">
+            <h1 className="mt-20 text-2xl font-semibold">FREQUENTLY ASKED QUESTIONS</h1>
+            <p>Quick answers to questions you may have. Can't find what you're looking for? </p>
             <p>Check out our full documentation</p>
 
-            <div className='mt-8 font-semibold'>
+            <div className="mt-8 font-semibold">
 
-            <div className='bg-emerald-50 shadow-sm sm:ml-36 sm:mr-36  md:mr-64 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between'>
-                <div className='flex justify-between items-center'><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown1} /></div>
+            <div className=" bg-emerald-50 shadow-sm sm:ml-36 sm:mr-36  md:mr-64 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between ">
+                <div className=" flex justify-between items-center "><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown1} /></div>
 
                 {isOpen1 && (
-                    <p className='mt-2'>
-                    No, not at all! Our platform is designed with user-friendliness in mind. You can easily navigate and set up your store without any technical expertise. It's as simple as a few clicks to get started!
-                    </p>
+                    <p className='mt-2'>No, not at all! Our platform is designed with user-friendliness in mind. You can easily navigate and set up your store without any technical expertise. It's as simple as a few clicks to get started!</p>
                 )}
             </div>
-            <div className='bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between'>
+            <div className=" bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between ">
                 <div className='flex justify-between items-center'><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown2} /></div>
 
                 {isOpen2 && (
-                    <p className='mt-2'>
-                    No, not at all! Our platform is designed with user-friendliness in mind. You can easily navigate and set up your store without any technical expertise. It's as simple as a few clicks to get started!
-                    </p>
+                    <p className='mt-2'>No, not at all! Our platform is designed with user-friendliness in mind. You can easily navigate and set up your store without any technical expertise. It's as simple as a few clicks to get started!</p>
                 )}
             </div>
-            <div className='bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between'>
-                <div className='flex justify-between items-center'><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown3} /></div>
+            <div className=" bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between ">
+                <div className=" flex justify-between items-center "><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown3} /></div>
 
                 {isOpen3 && (
                     <p className='mt-2'>
@@ -77,8 +73,8 @@ const Faq = () => {
                     </p>
                 )}
             </div>
-            <div className='bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between'>
-                <div className='flex justify-between items-center'><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown4} /></div>
+            <div className=" bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between ">
+                <div className=" flex justify-between items-center "><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown4} /></div>
 
                 {isOpen4 && (
                     <p className='mt-2'>
@@ -86,8 +82,8 @@ const Faq = () => {
                     </p>
                 )}
             </div>
-            <div className='bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 md:mb-2 p-2 px-4 rounded-md text-left items-center justify-between'>
-                <div className='flex justify-between items-center'><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown5} /></div>
+            <div className=" bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 md:mb-2 p-2 px-4 rounded-md text-left items-center justify-between ">
+                <div className=" flex justify-between items-center "><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown5} /></div>
 
                 {isOpen5 && (
                     <p className='mt-2'>
@@ -95,8 +91,8 @@ const Faq = () => {
                     </p>
                 )}
             </div>
-            <div className='bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between'>
-                <div className='flex justify-between items-center'><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown6} /></div>
+            <div className=" bg-emerald-50 shadow-sm md:mr-64 sm:ml-36 sm:mr-36 md:ml-64 mb-2 p-2 px-4 rounded-md text-left items-center justify-between ">
+                <div className=" flex justify-between items-center "><p>How much does it cost to set up a store?</p> <FaPlus className='cursor-pointer' onClick={toggleDropdown6} /></div>
 
                 {isOpen6 && (
                     <p className='mt-2'>

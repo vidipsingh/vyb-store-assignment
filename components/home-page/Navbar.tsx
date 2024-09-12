@@ -4,16 +4,16 @@ import React, { useState } from 'react';
 import { IoIosSearch } from "react-icons/io";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
-import { CiHeadphones } from "react-icons/ci";
+// import { CiHeadphones } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { GiHamburgerMenu } from 'react-icons/gi';
+// import { GiHamburgerMenu } from 'react-icons/gi';
 import Link from 'next/link';
 
 
 const Navbar = () => {
 
-const [isOpen, setIsOpen] = useState(false);
+// const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className='w-full'>
