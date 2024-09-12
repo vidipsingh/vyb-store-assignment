@@ -1,15 +1,15 @@
-import React from 'react'
-import {useState} from "react";
+import React from "react"
+// import {useState} from "react";
 import { FaGoogle } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
-import Navbar from '../home-page/Navbar';
+import Navbar from "../home-page/Navbar";
 // import { Link } from "react-router-dom";
 
 const Page2 = () => {
   return (
     <div>
     <Navbar />
-        <div className='flex justify-center p-10'>
+        <div className="flex justify-center p-10">
             <div>
                 <img src="images/signup.png" alt="" className="w-96 h-[450px] sm:hidden md:flex hidden " />
             </div>
@@ -39,7 +39,7 @@ const Page2 = () => {
             <input
                     type="email"
                     className="border border-black w-2/3 h-8 rounded-md md:ml-14 lg:ml-28 pl-2"
-                    placeholder='Enter email address'
+                    placeholder="Enter email address"
                 />
             <div className="flex flex-col md:ml-14 lg:ml-28 mt-4">
             <h1 className="">Password</h1>
@@ -48,13 +48,13 @@ const Page2 = () => {
             <input
                     type="password"
                     className="border border-black w-2/3 h-8 rounded-md md:ml-14 lg:ml-28 pl-2"
-                    placeholder='Enter Password'
+                    placeholder="Enter Password"
                 />
             <div className="md:ml-14 lg:ml-28 lg:mr-20 mt-4 items-center text-center "> 
-            <button className='border border-green-900 pl-10 pr-10 py-1 rounded-full'>Login</button>
+            <button className="border border-green-900 pl-10 pr-10 py-1 rounded-full">Login</button>
             <div className="">
                 <h1 className="flex items-center justify-center  "><FiMinus className="text-4xl"/>Don&apos;t have an account?<FiMinus className="text-4xl"/></h1>
-                <button className='bg-green-900 text-white px-8 py-1 rounded-full'>Sign Up</button>
+                <button className="bg-green-900 text-white px-8 py-1 rounded-full">Sign Up</button>
             </div>
             </div>
             </form>
