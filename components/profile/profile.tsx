@@ -39,10 +39,10 @@ const Profile = () => {
   return ( 
     <>
     <Navbar />
-    <div className="flex">
+    <div className="md:flex flex-none">
         
-        <div className="p-10 mx-28 border rounded-md my-8 w-1/4 border-black text-center">
-            <img src="images/profile-img.png" className="w-44 h-44 ml-6" alt="" />
+        <div className="p-10 md:mx-28 mr-16 ml-20 border rounded-md my-8 md:w-1/4 w-[290px] border-black text-center">
+            <img src="images/profile-img.png" className="w-44 h-44 ml-2 md:ml-6" alt="" />
             <p className="text-green-900">Change Profile Picture</p>
 
             <div className="flex flex-col mt-4">
@@ -56,7 +56,7 @@ const Profile = () => {
 
         </div>
 
-        <div className={` ${isActive2 ? `p-4 my-8 border border-black rounded-md w-1/2` : "hidden" } `}>
+        <div className={` ${isActive2 ? `p-4 my-8 ml-12 md:ml-0 border border-black rounded-md w-[350px] md:w-1/2` : "hidden" } `}>
             <div>
                 <h1 className="text-2xl font-bold">Creator Store</h1>
                 <p className="mt-2">Change Cover Picture</p>
@@ -98,7 +98,7 @@ const Profile = () => {
         </div>
 
 
-        <div className={` ${isActive1 ? `p-4 my-8 border border-black rounded-md w-1/2` : "hidden"  }`}>
+        <div className={` ${isActive1 ? `p-4 my-8 ml-20 md:ml-0 border border-black rounded-md w-2/3 md:w-1/2` : "hidden"  }`}>
             <h1 className="text-3xl font-bold">Profile</h1>
             <div className="mt-4">
                     <h1 className="text-xl font-bold">User Name</h1>
@@ -120,7 +120,7 @@ const Profile = () => {
                 </div>
         </div>
 
-        <div className={` ${isActive4 ? `p-4 my-8 border border-black rounded-md w-1/2` : "hidden"  }`}>
+        <div className={` ${isActive4 ? `p-4 my-8 ml-20 md:ml-0 border border-black rounded-md w-2/3 md:w-1/2` : "hidden"  }`}>
             <h1 className="text-3xl font-bold">Address</h1>
             <div className="mt-4">
                     <h1 className="text-xl font-bold">Address Line 1</h1>

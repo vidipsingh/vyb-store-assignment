@@ -30,16 +30,16 @@ const Hero = () => {
     <div className="flex flex-col justify-center">
       <img src="images/hero.png" alt="" className="" />
 
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-20 items-center place-items-center ml-32 mr-32 shadow-2xl mb-20 p-10 rounded-lg text-lg font-bold">
-        <div className="md:w-40 sm:w-20 w-20  border-r-2 border-slate-300">
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-20 items-center place-items-center ml-10 mr-10 md:ml-32 md:mr-32 shadow-2xl mb-20 p-10 rounded-lg text-lg font-bold">
+        <div className="md:w-40 sm:w-20 w-20  md:border-r-2 border-slate-300">
             <img src="images/earth.png" alt=""  className="w-20 h-20 "/>
             <p className="w-16">Travel Itineary</p>
         </div>
-        <div className="md:w-40 sm:w-20 w-20  border-r-2 border-slate-300">
+        <div className="md:w-40 sm:w-20 w-20  md:border-r-2 border-slate-300">
             <img src="images/merch.png" alt="" className="w-16 h-16" />
             <p className="w-16">Custom Merchandise</p>
         </div>
-        <div className="md:w-40 sm:w-20 w-20  border-r-2 border-slate-300">
+        <div className="md:w-40 sm:w-20 w-20  md:border-r-2 border-slate-300">
             <img src="images/content.png" alt="" className="w-16 h-16" />
             <p className="w-16">Digital Content</p>
         </div>
@@ -60,27 +60,30 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center px-10 py-8 items-center">
-            <FaCircleArrowLeft  className="w-24 h-24 items-center"/>
-            <div className="flex gap-28">
-                <div className="w-1/2 px-14">
+            <FaCircleArrowLeft  className="w-28 md:w-24 h-28 md:h-24 items-center"/>
+            <div className="flex md:gap-28 mx-1 gap-10">
+                <div className="w-2/3 md:px-14 ">
                     <h1 className="text-2xl font-bold">Delhi Itinerary</h1>
-                    <p className="sm:text-sm text-sm md:text-base ">
-                    Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people.
+                    <p className="sm:text-sm md:flex hidden text-sm md:text-base ">
+                    Delhi, India's capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people.
+                    </p>
+                    <p className="sm:text-sm md:hidden flex text-sm md:text-base ">
+                    Delhi, India's capital territory, is a massive metropolitan area in ...
                     </p>
 
-                    <button className=" border-black border-2 p-2 px-4 rounded-xl text-lg mt-10">Rs. 349</button>
-                    <button className="bg-green-900 text-white  ml-4 p-2 px-6 rounded-lg text-lg mt-10">More</button>
+                    <button className=" border-black border-2 p-0.5 md:p-2 px-1 md:px-4 rounded-xl text-base md:text-lg mt-10">Rs. 349</button>
+                    <button className="bg-green-900 text-white ml-0 md:ml-4 p-0.5 md:p-2 px-3 md:px-6 rounded-lg text-base md:text-lg mt-5 md:mt-10">More</button>
                 </div>
                 <div>
                     <img src="images/monument.png" alt="" className="md:w-80 md:h-80 sm:w-40 sm:h-40 " />
                 </div>
             </div>
-            <FaArrowCircleRight className="w-24 h-24 items-center" />
+            <FaArrowCircleRight className="w-28 md:w-24 h-28 md:h-24 items-center" />
         </div>
         </div>
 
         <div className="md:flex sm:flex-none flex-none justify-center gap-8 mt-10">
-            <div className=" bg-green-950 text-white w-96 p-4 h-52 rounded-md mt-28 sm:ml-24 ml-24 md:ml-0 ">
+            <div className=" bg-green-950 text-white w-96 p-4 h-52 rounded-md mt-28 sm:ml-24 ml-5 md:ml-0 ">
                 <h1 className="font-bold text-xl">Start Vybing with us!</h1>
                 <p className="mt-2"> We help influencers make money by monetizing their travel plans, merchandise, and digital goods and many more. </p>
 
@@ -91,14 +94,14 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-10 mb-20">
-            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 sm:ml-40 bg-emerald-50 rounded-md p-4">
+            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 ml-5 mr-5 md:mr-0 sm:ml-40 bg-emerald-50 rounded-md p-4">
                 <h1 className="font-bold text-xl">Sign Up and create your own store hassle-free.</h1>
                 <p className="mt-2">Join us via google signin and verify your influencer status by entering you social media Id and unlock your store <span className="font-bold">@ zero cost.</span> </p>
 
                 <img src="images/Mobile login 2.png" alt="" className="mt-6 md:w-56 sm:w-28 sm:h-56 md:h-[450px] text-center sm:ml-16 md:ml-32" />
             </div>
 
-            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 sm:ml-40 bg-emerald-50 rounded-md p-4">
+            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 ml-5 mr-5 md:mr-0 sm:ml-40 bg-emerald-50 rounded-md p-4">
                 <h1 className="font-bold text-xl">Build & customize your store front.</h1>
                 <p className="mt-2">Simply fill in the details to build your digital store. Once done, start selling your products to your audience.</p>
 
@@ -106,14 +109,14 @@ const Hero = () => {
             </div>
 
 
-            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 sm:ml-40 bg-emerald-50 rounded-md p-4">
+            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 ml-5 mr-5 md:mr-0 sm:ml-40 bg-emerald-50 rounded-md p-4">
                 <h1 className="font-bold text-xl">Call audience to your store. Easily integrate links into content. </h1>
                 <p className="mt-2">After setting up your products, its time to go public. Put your store link in insta bio and lets make first post together !</p>
 
                 <img src="images/iPhone 14 & 15 Pro - 150 1.png" alt="" className="mt-6 md:w-56 sm:w-28 sm:h-56 md:h-[450px] text-center sm:ml-16 md:ml-32" />
             </div>
 
-            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 sm:ml-40 bg-emerald-50 rounded-md p-4">
+            <div className="md:w-[500px] md:h-[650px] sm:w-[250px] sm:h-[500px] mt-10 ml-5 mr-5 md:mr-0 sm:ml-40 bg-emerald-50 rounded-md p-4">
                 <h1 className="font-bold text-xl"> Monetize your influencer status: Earn money adding real value to your true followers! </h1>
                 <p className="mt-2">Let VYB the money now !! Its here and widthdraw it periodically.</p>
 
@@ -124,10 +127,10 @@ const Hero = () => {
         </div>
 
 
-        <div className="w-screen h-[470px] bg-emerald-50">
+        <div className="w-screen h-[650px] md:h-[470px] bg-emerald-50">
             <h1 className="text-3xl font-semibold text-center pt-4">ESTIMATE EARNING POTENTIAL</h1>
 
-            <div className="md:ml-60 lg:ml-72 sm:ml-20 py-8">
+            <div className="md:ml-60 lg:ml-72 sm:ml-20 px-2 py-8">
                 <p className="text-lg">What kind of influencer are you?</p>
 
                 <div className="flex bg-white w-[400px] mt-2">
@@ -135,7 +138,7 @@ const Hero = () => {
                     {/* <RiArrowDropDownLine className="ml-2 w-4 h-4 align-middle" /> */}
                 </div>
                 
-                <div className="flex gap-8">
+                <div className="md:flex gap-8">
 
 
                 <div className="p-2 max-w-lg rounded-lg w-[400px] h-[200px] mt-4 ">
@@ -182,7 +185,7 @@ const Hero = () => {
                     </div>
                     
                     <div className="text-center mt-4">
-                        <h2 className="text-xl font-semibold">Yealr Earnings</h2>
+                        <h2 className="text-xl font-semibold">Yearly Earnings</h2>
                         <p className="text-2xl font-bold">₹{12*calculateEarnings(followers, products)}</p>
                     </div>
                 </div>
@@ -192,7 +195,7 @@ const Hero = () => {
 
             </div> 
 
-            <button className="md:ml-[600px] sm:ml-[300px]  bg-green-900 p-2 px-4 text-white rounded-lg">Calculate</button>
+            <button className="md:ml-[600px] sm:ml-[300px] ml-[170px]  bg-green-900 p-2 px-4 text-white rounded-lg">Calculate</button>
         </div>
 
         

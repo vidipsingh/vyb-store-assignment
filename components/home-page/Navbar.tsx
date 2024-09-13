@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
@@ -13,16 +13,23 @@ import Link from "next/link";
 
 const Navbar = () => {
 
+  const [isActive1, setIsActive1] = useState(false);
+
+  const toggleActive1 = () => {
+    setIsActive1(!isActive1);
+  };
+
+
 // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full">
     <div className="flex justify-between bg-gray-300 p-2 mr-16 ml-16 mt-2 rounded-3xl ">
-       <Link  href="/"> <img src="/images/image.png" alt="" className="w-20 h-10 items-center mt-0.5 cursor-pointer" /> </Link>
+       <Link  href="/"> <img src="/images/image.png" alt="" className="md:w-20 w-15 h-10 md:h-10 items-center mt-0.5 cursor-pointer" /> </Link>
 
       <div className="flex mb-2 mt-2 bg-white rounded-full p-1 ">
         <IoIosSearch className="w-6 h-6 "/>   
-        <input type="text" placeholder="Search" className="rounded-full w-48 sm:w-36" />
+        <input type="text" placeholder="Search" className="rounded-full w-28 md:w-48 sm:w-36" />
       </div>
 
       {/* <div className="md:hidden flex items-center p-2">
@@ -60,9 +67,14 @@ const Navbar = () => {
 
       <div className="flex items-center text-lg cursor-pointer">
        <Link href="/profile"> <CgProfile /> </Link>
-        <RiArrowDropDownLine />
+        <RiArrowDropDownLine onClick={toggleActive1} />
       </div>
 
+    </div>
+
+    <div className={ ` ${isActive1 ? `z-50 absolute md:hidden -mt-3 rounded-md ml-72 p-4 mr-8 bg-gray-200 ` : "hidden" } ` }>
+      <Link href="/sign-in"><h1 className="font-semibold">Sign In</h1> </Link>
+      <Link href="/sign-up"><h1 className="font-semibold">Sign Up</h1> </Link>
     </div>
     </div>
   )

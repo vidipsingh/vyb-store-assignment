@@ -16,7 +16,7 @@ const Page2 = () => {
 
 
 
-        <div className="w-3/4 pl-10 sm:pl-0 sm:w-3/4 lg:w-1/2 mt-2 h-5/6 border lg:border-none border-black">
+        <div className="w-3/4 md:pl-10 pl-5 sm:pl-0 sm:w-3/4 lg:w-1/2 mt-2 md:h-5/6 h-[470px] border lg:border-none border-black">
             <h1 className="w-40 lg:ml-56 md:ml-14 font-semibold  text-2xl mt-8">
                 Log In Page
             </h1>
@@ -28,7 +28,7 @@ const Page2 = () => {
                 
             </div>
             <div className="">
-                <h1 className="flex items-center justify-center  mt-6"><FiMinus className="text-4xl"/>OR<FiMinus className="text-4xl"/></h1>
+                <h1 className="flex items-center justify-center mr-10  mt-6"><FiMinus className="text-4xl"/>OR<FiMinus className="text-4xl"/></h1>
             </div>
 
 
@@ -38,7 +38,7 @@ const Page2 = () => {
             </div>
             <input
                     type="email"
-                    className="border border-black w-2/3 h-8 rounded-md md:ml-14 lg:ml-28 pl-2"
+                    className="border border-black md:w-2/3  h-8 rounded-md md:ml-14 lg:ml-28 pl-2"
                     placeholder="Enter email address"
                 />
             <div className="flex flex-col md:ml-14 lg:ml-28 mt-4">
@@ -47,10 +47,10 @@ const Page2 = () => {
             </div>
             <input
                     type="password"
-                    className="border border-black w-2/3 h-8 rounded-md md:ml-14 lg:ml-28 pl-2"
+                    className="border border-black md:w-2/3 h-8 rounded-md md:ml-14 lg:ml-28 pl-2"
                     placeholder="Enter Password"
                 />
-            <div className="md:ml-14 lg:ml-28 lg:mr-20 mt-4 items-center text-center "> 
+            <div className="md:ml-14  -ml-6 lg:ml-28 lg:mr-20 mt-4 items-center text-center "> 
             <button className="border border-green-900 pl-10 pr-10 py-1 rounded-full">Login</button>
             <div className="">
                 <h1 className="flex items-center justify-center  "><FiMinus className="text-4xl"/>Don&apos;t have an account?<FiMinus className="text-4xl"/></h1>
