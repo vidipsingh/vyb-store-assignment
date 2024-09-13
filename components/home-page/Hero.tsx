@@ -65,10 +65,10 @@ const Hero = () => {
                 <div className="w-2/3 md:px-14 ">
                     <h1 className="text-2xl font-bold">Delhi Itinerary</h1>
                     <p className="sm:text-sm md:flex hidden text-sm md:text-base ">
-                    Delhi, India's capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people.
+                    Delhi, India&apos;s capital territory, is a massive metropolitan area in the country&apos;s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people.
                     </p>
                     <p className="sm:text-sm md:hidden flex text-sm md:text-base ">
-                    Delhi, India's capital territory, is a massive metropolitan area in ...
+                    Delhi, India&apos;s capital territory, is a massive metropolitan area in ...
                     </p>
 
                     <button className=" border-black border-2 p-0.5 md:p-2 px-1 md:px-4 rounded-xl text-base md:text-lg mt-10">Rs. 349</button>
