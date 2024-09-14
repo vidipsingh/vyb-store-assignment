@@ -5,9 +5,9 @@ import Navbar from "../home-page/Navbar"
 
 const Profile = () => {
 
-    const [activeSection, setActiveSection] = useState(null); // Initialize with null, no section active
+    const [activeSection, setActiveSection] = useState<number | null>(null); // Initialize with null, no section active
 
-    const toggleActiveSection = (section) => {
+    const toggleActiveSection = (section: number) => {
         if (activeSection === section) {
             setActiveSection(null); // Close the section if it’s already active
         } else {
