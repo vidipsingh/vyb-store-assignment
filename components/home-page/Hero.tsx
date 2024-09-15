@@ -54,13 +54,13 @@ const Hero = () => {
         <div className="py-6 px-12 flex justify-between ">
             <h1 className="p-1 font-bold sm:text-lg text-sm md:text-2xl">Products</h1>
             <div className="flex gap-4">
-                <button className="flex flex-row items-center border-black border-2 p-1 px-2 gap-4  rounded-lg text-lg">Itinenary <RiArrowDropDownLine className=" w-7 h-7" /></button>
-                <button className="bg-green-900 text-white px-2 rounded-lg text-lg">Demo Store</button>
+                <button className="flex flex-row items-center border-black border-2 p-1 px-3 gap-4  rounded-lg text-lg">Itinenary <RiArrowDropDownLine className=" w-7 h-7" /></button>
+                <button className="bg-green-900 text-white px-3 rounded-lg text-lg">Demo Store</button>
             </div>
         </div>
 
         <div className="flex justify-center px-10 py-8 items-center">
-            <FaCircleArrowLeft  className="w-28 md:w-24 h-28 md:h-24 items-center"/>
+            <FaCircleArrowLeft  className="w-28 md:w-24 h-28 md:h-24 items-center cursor-pointer"/>
             <div className="flex md:gap-28 mx-1 gap-10">
                 <div className="w-2/3 md:px-14 ">
                     <h1 className="text-2xl font-bold">Delhi Itinerary</h1>
@@ -78,12 +78,12 @@ const Hero = () => {
                     <img src="images/monument.png" alt="" className="md:w-80 md:h-80 sm:w-40 sm:h-40 " />
                 </div>
             </div>
-            <FaArrowCircleRight className="w-28 md:w-24 h-28 md:h-24 items-center" />
+            <FaArrowCircleRight className="w-28 md:w-24 h-28 md:h-24 items-center cursor-pointer" />
         </div>
         </div>
 
         <div className="md:flex sm:flex-none flex-none justify-center gap-8 mt-10">
-            <div className=" bg-green-950 text-white w-96 p-4 h-52 rounded-md mt-28 sm:ml-24 ml-5 md:ml-0 ">
+            <div className=" bg-green-950 md:sticky md:top-20 text-white w-96 p-4 h-52 rounded-md mt-28 sm:ml-24 ml-5 md:ml-0 ">
                 <h1 className="font-bold text-xl">Start Vybing with us!</h1>
                 <p className="mt-2"> We help influencers make money by monetizing their travel plans, merchandise, and digital goods and many more. </p>
 
@@ -144,7 +144,7 @@ const Hero = () => {
                 <div className="p-2 max-w-lg rounded-lg w-[400px] h-[200px] mt-4 ">
 
             <div className="mb-6">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-center md:text-left text-sm font-medium text-gray-700 mb-2">
                 How many followers do you have?
                 </label>
                 <input
@@ -154,13 +154,13 @@ const Hero = () => {
                     step="10000"
                     value={followers}
                     onChange={(e) => setFollowers(Number(e.target.value))}
-                    className="w-full"
+                    className="w-full h-2 bg-white rounded-xl appearance-none cursor-pointer accent-green-800"
                 />
                 <p className="text-center bg-white shadow-sm rounded-full mx-40">{followers}</p>
             </div>
 
             <div className="mb-6">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-center md:text-left text-sm font-medium text-gray-700 mb-2">
                     How many products do you list monthly?
                 </label>
                 <input
@@ -170,7 +170,7 @@ const Hero = () => {
                     step="1"
                     value={products}
                     onChange={(e) => setProducts(Number(e.target.value))}
-                    className="w-full"
+                    className="w-full h-2 bg-white rounded-xl appearance-none cursor-pointer accent-green-800"
                 />
                 <p className="text-center bg-white shadow-sm rounded-full mx-44">{products}</p>
             </div>
@@ -178,15 +178,15 @@ const Hero = () => {
             
                 </div>
 
-                <div>
+                <div className="flex md:flex-none gap-4 ml-10 ">
                     <div className="text-center mt-4">
                         <h2 className="text-xl font-semibold">Monthly Earnings</h2>
-                        <p className="text-2xl font-bold">₹{calculateEarnings(followers, products)}</p>
+                        <p className="text-2xl font-bold text-green-800">₹{calculateEarnings(followers, products)}</p>
                     </div>
                     
                     <div className="text-center mt-4">
                         <h2 className="text-xl font-semibold">Yearly Earnings</h2>
-                        <p className="text-2xl font-bold">₹{12*calculateEarnings(followers, products)}</p>
+                        <p className="text-2xl font-bold text-green-800">₹{12*calculateEarnings(followers, products)}</p>
                     </div>
                 </div>
                 

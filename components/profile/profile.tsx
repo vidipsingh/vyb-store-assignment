@@ -93,7 +93,7 @@ const Profile = () => {
                         <h1 className="text-xl font-bold">GST Invoicing</h1>
                         <input type="text" placeholder="xxxxxxxx" className="border border-green-900 p-2 mt-2 mb-4 rounded-md w-full " />
 
-                        <button className="w-1/3 bg-green-900 rounded-md px-6 py-2 text-white">Save</button>
+                        <button className="w-1/3 bg-green-900 rounded-2xl px-6 py-2 text-white">Save</button>
                     </div>
         </div>
 
@@ -116,47 +116,90 @@ const Profile = () => {
                             <h1 className="text-xl font-bold">Phone Number</h1>
                             <input type="text" placeholder="Enter phone number" className="border border-green-900 p-2 mt-2 mb-4 rounded-md w-full " />
 
-                            <button className="w-1/3 bg-green-900 rounded-md px-6 py-2 text-white">Save</button>
+                            <button className="w-1/3 bg-green-900 rounded-2xl px-6 py-2 text-white">Save</button>
                         </div>
         </div>
 
-        {/* Address Section */}
-        <div className={`${activeSection === 4 ? "p-4 my-8 ml-20 md:ml-0 border border-black rounded-md w-2/3 md:w-1/2" : "hidden"}`}>
-        <h1 className="text-3xl font-bold">Address</h1>
-                    <div className="mt-4">
-                            <h1 className="text-xl font-bold">Address Line 1</h1>
-                            <input type="text" placeholder="Entre Address" className="border border-green-900 p-2 mt-2 mb-4 rounded-md w-full " />
+            {/* Address Section */}
+            <div className={`${activeSection === 4 ? "p-4 my-8 ml-20 md:ml-0 border border-black rounded-md w-2/3 md:w-1/2" : "hidden"}`}>
+            <h1 className="text-3xl font-bold">Address</h1>
+                        <div className="mt-4">
+                                <h1 className="text-xl font-bold">Address Line 1</h1>
+                                <input type="text" placeholder="Entre Address" className="border border-green-900 p-2 mt-2 mb-4 rounded-md w-full " />
 
-                            <h1 className="text-xl font-bold mt-2">Address Line 2</h1>
-                            <input type="text" placeholder="Enter Address" className="border border-green-900 p-2 mt-2 mb-4 rounded-md w-full " />
+                                <h1 className="text-xl font-bold mt-2">Address Line 2</h1>
+                                <input type="text" placeholder="Enter Address" className="border border-green-900 p-2 mt-2 mb-4 rounded-md w-full " />
 
-                            <div className="flex">
-                                <div className="w-1/2">
-                                    <h1 className="text-xl font-bold mx-2">Zip Code</h1>
-                                    <input type="text" placeholder="Enter Zip Code" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
+                                <div className="flex">
+                                    <div className="w-1/2">
+                                        <h1 className="text-xl font-bold mx-2">Zip Code</h1>
+                                        <input type="text" placeholder="Enter Zip Code" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
+                                    </div>
+                                    
+                                    <div className="w-1/2">
+                                        <h1 className="text-xl font-bold mx-2">City</h1>
+                                        <input type="password" placeholder="Enter City" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
+                                    </div>
                                 </div>
                                 
-                                <div className="w-1/2">
-                                    <h1 className="text-xl font-bold mx-2">City</h1>
-                                    <input type="password" placeholder="Enter City" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
+                                <div className="flex">
+                                    <div className="w-1/2">
+                                        <h1 className="text-xl font-bold mx-2">Zip Code</h1>
+                                        <input type="text" placeholder="Enter Zip Code" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
+                                    </div>
+                                    
+                                    <div className="w-1/2">
+                                        <h1 className="text-xl font-bold mx-2">City</h1>
+                                        <input type="password" placeholder="Enter City" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div className="flex">
-                                <div className="w-1/2">
-                                    <h1 className="text-xl font-bold mx-2">Zip Code</h1>
-                                    <input type="text" placeholder="Enter Zip Code" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
-                                </div>
-                                
-                                <div className="w-1/2">
-                                    <h1 className="text-xl font-bold mx-2">City</h1>
-                                    <input type="password" placeholder="Enter City" className="border border-green-900 p-2 mt-2 mb-4 mx-2 rounded-md w-4/5 " />
-                                </div>
-                            </div>
 
-                            <button className="w-2/5 bg-green-900 rounded-md px-6 py-2 text-white">Save</button>
-                        </div>
-        </div>
+                                <button className="w-2/5 bg-green-900 rounded-2xl px-6 py-2 text-white">Save</button>
+                            </div>
+            </div>
+
+            <div className={`${activeSection === 3 ? "p-4 my-8 ml-20 md:ml-0 border border-black rounded-md w-2/3 md:w-1/2" : "hidden"}`}>
+                <div className="flex gap-2">
+                    <button className="bg-green-900 text-white md:px-4 px-2  py-1 rounded-full">Daily</button>
+                    <button className="py-1 md:px-4 px-2  border border-black rounded-full">Monthly</button>
+                    <button className="py-1 md:px-4 px-2  border border-black rounded-full">Till Date</button>
+                </div>
+
+                <div>
+                    <img src="images/graph.png" className="w-2/3 mx-4 my-2" alt="" />
+                    <h1 className="text-xl font-bold pb-2 pt-2 border-b-2">Withdraw History</h1>
+                </div>
+
+                <div className="md:flex  justify-between items-center font-semibold py-8">
+                    <div className="flex gap-4">
+                        <p>Available balance</p>
+                        <p>₹10000</p>
+                    </div>
+
+                    <div>
+                        <button className="px-4 py-2 bg-gray-300 text-white mt-4 md:mt-0 rounded-xl">
+                            Withdraw
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div className="flex md:text-base text-sm  gap-8 font-semibold py-2">
+                    <p>Last withdraw</p>
+                    <p>₹50000</p>
+                    <p>On 21 JUN 2024</p>
+                </div>
+
+                <div className="flex md:text-base text-sm gap-4 font-semibold py-2">
+                    <p>Next date you can withdraw</p>
+                    <p>1 Jul 2024</p>
+                </div>
+
+                <div className="flex md:text-base text-sm gap-4 font-semibold py-2">
+                    <p>Payment Cycle</p>
+                    <p>1 Jul 2024</p>
+                </div>
+            </div>
         </div>
 
     </>

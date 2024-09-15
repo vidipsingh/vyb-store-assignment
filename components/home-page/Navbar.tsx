@@ -23,8 +23,8 @@ const Navbar = () => {
 // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full">
-    <div className="flex justify-between bg-gray-300 p-2 mr-16 ml-16 mt-2 rounded-3xl ">
+    <div className="w-full sticky top-0 z-50">
+    <div className="flex justify-between bg-gray-300/30 backdrop-blur-md p-2 mr-16 ml-16 mt-2 rounded-3xl  ">
        <Link  href="/"> <img src="/images/image.png" alt="" className="md:w-20 w-15 h-10 md:h-10 items-center mt-0.5 cursor-pointer" /> </Link>
 
       <div className="flex mb-2 mt-2 bg-white rounded-full p-1 ">

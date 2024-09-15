@@ -44,9 +44,9 @@ const Faq = () => {
   return (
     <div>
         <div className="w-screen h-[550px] text-center">
-            <h1 className="mt-20 text-2xl font-semibold">FREQUENTLY ASKED QUESTIONS</h1>
+            <h1 className="mt-20 text-2xl font-semibold text-green-900">FREQUENTLY ASKED QUESTIONS</h1>
             <p>Quick answers to questions you may have. Can&apos;t find what you&apos;re looking for? </p>
-            <p>Check out our full documentation</p>
+            <p className="text-green-900">Check out our full documentation</p>
 
             <div className="mt-8 font-semibold">
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../home-page/Navbar";
 
 export function Page1() {
@@ -7,12 +8,12 @@ export function Page1() {
     <div className="h-screen flex justify-center flex-col">
         <div className="flex justify-center gap-48">
                 <div className="sm:hidden md:flex hidden">
-                    <img src="images/signup.png" alt="" className="w-80 h-[400px] sm:hidden md:flex hidden " />
+                    <img src="images/signup.png" alt="" className="w-96 h-[500px] sm:hidden md:flex hidden " />
                 </div>
 
-                <div>
+                <div className="md:w-1/4">
                     <div className="px-10">
-                        <div className="text-3xl font-extrabold">
+                        <div className="text-3xl text-center font-extrabold">
                             Sign Up
                         </div>
                     </div>
@@ -23,10 +24,15 @@ export function Page1() {
                         
                     </div>
 
-                    <div className="mt-4">
-                        <h1>Are You A Creator?</h1>
+                    <div className="mt-4 items-center text-center">
+                        <h1 className="text-center">Are You A Creator?</h1>
                         <button className="p-2  mt-2 px-6 mr-4 border border-black rounded-md">Yes</button>
                         <button className="p-2  mt-2 px-6 mr-4 border border-black rounded-md">No</button>
+                        
+                    </div>
+                    <div className="text-center items-center my-4">
+                        <button className="px-10 py-1 border border-green-800 text-green-800 rounded-full">Sign Up</button>
+                        <p className="my-1">Already have an account? <Link href="/sign-in" className="text-green-700 font-semibold" >Login</Link></p>
                     </div>
 
                 </div>
